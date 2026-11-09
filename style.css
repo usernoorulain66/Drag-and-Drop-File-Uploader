@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: lavender;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px lightgray;
+}
+h1 {
+    color: purple;
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: gray;
+    margin-bottom: 30px;
+}
+.upload-area {
+    border: 2px dashed mediumpurple;
+    border-radius: 12px;
+    padding: 35px 20px;
+    background-color: ghostwhite;
+    transition: 0.3s;
+}
+.upload-area:hover {
+    background-color: lavender;
+    border-color: purple;
+}
+.upload-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.upload-area h2 {
+    color: darkslateblue;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.upload-area p {
+    color: gray;
+    margin-bottom: 12px;
+}
+#browseButton {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px 0;
+}
+#browseButton:hover {
+    background-color: darkslateblue;
+}
+.file-info {
+    font-size: 13px;
+    margin-top: 12px;
+}
+.message {
+    color: red;
+    margin-top: 15px;
+}
+.preview-container {
+    margin-top: 25px;
+}
+.preview-container h2 {
+    color: purple;
+    margin-bottom: 15px;
+}
+#imagePreview {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#fileName, #fileSize {
+    color: gray;
+    margin: 5px;
+}
+.progress-container {
+    margin-top: 20px;
+}
+.progress-container p {
+    margin-bottom: 8px;
+    color: purple;
+}
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: mediumseagreen;
+    border-radius: 10px;
+}
+.success-message {
+    color: green;
+    margin-top: 15px;
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .upload-area {
+        padding: 25px 10px;
+    }
+}
